@@ -13,8 +13,8 @@ services:
             - ./jump/sites:/sites
         environment:
             SITENAME: 'Jump Dashboard'
-            OWMAPIKEY: 'asfd9p8gdf9gfsda897fsad'
-            LATLONG: '41.3818, 2.1685'
+            OWMAPIKEY: 'asfd9p8gdf9gfsda897fsad'  # Poner datos correctos
+            LATLONG: '41.3818, 2.1685'            # Poner datos correctos
             SHOWCLOCK: 'true'
             AMPMCLOCK: 'false'
             SHOWGREETING: 'true'
