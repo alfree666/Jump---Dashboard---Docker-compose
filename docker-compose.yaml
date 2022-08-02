@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+    jump:
+        image: daledavies/jump
+        ports:
+            - "8200:8080"
+        volumes:
+            - ./jump/backgrounds:/backgrounds
+            - ./jump/favicon:/favicon
+            - ./jump/search:/search
+            - ./jump/sites:/sites
+        environment:
+            SITENAME: 'Jump Dashboard'
+            OWMAPIKEY: 'asfd9p8gdf9gfsda897fsad'
+            LATLONG: '41.3818, 2.1685'
+            SHOWCLOCK: 'true'
+            AMPMCLOCK: 'false'
+            SHOWGREETING: 'true'
+            METRICTEMP: 'true'
+            CACHEBYPASS: 'true'
+            CHECKSTATUS: 'true'
+
+            
